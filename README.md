@@ -1,55 +1,179 @@
-## Exp 8: Reproducing an Image Using Prompts for Image Generation
 
-# Date :
-# Reg. No. 
+# Exno.7-Develop a prompt-based application tailored to their personal needs, fostering creativity and practical problem-solving skills while leveraging the capabilities of large language models.
 
-## Aim:
-To demonstrate the ability of text-to-image generation tools to reproduce an existing image by crafting precise prompts. The goal is to identify key elements within the image and use these details to generate an image as close as possible to the original.
+### Date: 24.11.25
+### Name: Jai Surya R
+### Register no: 212223230084
 
-## Procedure:
-1.	Analyze the Given Image:
-○	Examine the image carefully, noting key elements such as:
-■	Objects/Subjects (e.g., people, animals, objects)
-■	Colors (e.g., dominant hues, contrasts)
-■	Textures (e.g., smooth, rough, glossy)
-■	Lighting (e.g., bright, dim, shadows)
-■	Background (e.g., outdoor, indoor, simple, detailed)
-■	Composition (e.g., focal points, perspective)
-■	Style (e.g., realistic, artistic, cartoonish)
-2.	Create the Basic Prompt:
-○	Write an initial, simple description of the image. For example, if the image shows a landscape, the prompt could be "A serene landscape with mountains and a river."
-3.	Refine the Prompt with More Detail:
-○	Add specific details such as colors, mood, and time of day. For example: "A serene landscape during sunset with purple mountains, a calm river reflecting the colors of the sky, and a few trees along the shore."
-4.	Identify Style and Artistic Influences:
-○	If the image has a particular style (e.g., impressionist painting, realistic photography, minimalistic), include that in the prompt. For example: "A serene landscape in the style of a watercolor painting with soft, blended colors."
-5.	Adjust and Fine-tune:
-○	Refine the prompt further by adding specific instructions about elements like textures, weather conditions, or any other distinctive features in the image. For example: "A serene landscape during sunset with purple mountains, a calm river reflecting the colors of the sky, a few trees along the shore, and soft, pastel tones in the clouds."
-6.	Generate the Image:
-○	Use the crafted prompt to generate the image in a text-to-image model (e.g., DALL·E, Stable Diffusion, MidJourney).
-7.	Compare the Generated Image with the Original:
-○	Assess how closely the generated image matches the original in terms of colors, composition, subject, and style. Note the differences and refine the prompt if necessary.
-## Tools/LLMs for Image Generation:
-●	DALL·E (by OpenAI): A text-to-image generation tool capable of creating detailed images from textual prompts.
-○	Website: DALL·E
-●	Stable Diffusion: An open-source model for generating images from text prompts, known for its flexibility and customizable outputs.
-○	Website: Stable Diffusion
-●	MidJourney: A popular AI tool for generating visually striking and creative images based on text descriptions.
-○	Website: MidJourney
-## Instructions:
-1.	Examine the Given Image: Study the image to understand its key features—objects, colors, lighting, composition, and any stylistic choices.
-2.	Write the Basic Prompt: Start with a simple description of the primary elements in the image (e.g., "A sunset over a mountain range").
-3.	Refine and Add Details: Improve the prompt by incorporating specifics like colors, shapes, textures, and style (e.g., "A sunset over purple mountains, with a golden sky and a calm river flowing through the valley").
-4.	Use the Selected Tool: Choose an image generation model (e.g., DALL·E, Stable Diffusion, or MidJourney) and input the refined prompt.
-5.	Iterate and Adjust: If the initial result isn't quite right, adjust the prompt further based on the differences observed between the generated and original image.
-6.	Save and Document: Save the generated image and document your prompt alongside any observations on how the output compares to the original.
-## Deliverables:
-1.	The Original Image: Provided image for reference.
-2.	The Final Generated Image: The image created using your refined prompt.
-3.	Prompts Used: The text prompts created during the experiment.
-4.	Comparison Report: A report highlighting the differences and similarities between the original and generated images, along with any adjustments made to the prompt.
+# Aim: 
+To develop a prompt-based application using ChatGPT - To demonstrate how to create a prompt-based application to organize daily tasks, showing the progression from simple to more advanced prompt designs and their corresponding outputs.
 
-## Conclusion:
-By using detailed and well-crafted prompts, text-to-image generation models can be effective in reproducing an image closely. The quality of the generated image depends on how accurately the prompt describes the image's key elements. The experiment demonstrates the importance of prompt refinement and iteration when working with AI tools to achieve desired outcomes. With practice, the model can generate images that closely match real-world visuals, which is useful for creative and practical applications.
+# Explanation: 
+Prompt:
+"Design a personal productivity assistant that can help manage daily tasks, schedule reminders, suggest wellness tips, and answer general queries. The assistant should interact using natural language and be adaptable to the user’s changing preferences over time."
+### Procedure:
+1. Define the core requirements of a personal productivity assistant.
+2. Identify and construct appropriate prompts for each task using an LLM (e.g., ChatGPT).
+3. Simulate natural user interaction through a simple interface or command-line system.
+4. Collect feedback or inputs from users and adapt responses accordingly.
+5. (Optional) Integrate basic memory to simulate preference adaptation.
+EXPECTED OUTPUT: - (attached the drive link)
+Output (Example Response by LLM):
+Personal Productivity Assistant Features:
+1. Daily Task Manager:
+o Accept tasks via natural language (e.g., "Remind me to call mom at 6 PM").
+o Organize tasks by priority and deadline.
+o Provide daily summaries and pending items.
+2. Smart Scheduler:
+o Schedule events and set reminders using contextual understanding.
+o Notify user of overlapping appointments or free time slots.
+3. Wellness Tips Generator:
+o Suggest daily wellness advice (hydration, exercise, screen-time breaks).
+o Adapt suggestions based on past user preferences and responses.
+
+# Title:
+
+Designing a Personal Productivity Assistant Using Natural Language Interaction
+
+# Objective:
+
+To design and simulate a Personal Productivity Assistant (PPA) that manages daily tasks, schedules reminders, suggests wellness tips, answers general queries, and adapts to user preferences using an LLM such as ChatGPT.
+
+# Core requirements:
+
+| Feature                          | Description                                                                                                                            |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Task Management**              | Accept tasks via natural language (e.g., “Remind me to call mom at 6 PM”), support deadlines, priorities, and provide daily summaries. |
+| **Smart Scheduler**              | Schedule meetings/events, detect conflicts, and suggest alternative time slots.                                                        |
+| **Wellness Tips Generator**      | Suggest hydration, posture, and breathing exercises based on context and prior responses.                                              |
+| **General Query Answering**      | Respond to simple factual or contextual questions naturally.                                                                           |
+| **Personalization & Adaptation** | Store preferences (tone, work hours) and learn from user interactions (e.g., frequent snoozes).                                        |
+| **Natural Language Interface**   | Understand everyday language and respond conversationally.                                                                             |
+| **Memory Simulation**            | Retain user settings and adapt responses accordingly over time.                                                                        |
+
+# System Design Overview:
+
+## Architecture
+
+Input Module – Accepts natural-language commands.
+
+Intent Parser – Classifies input into intents: Task, Schedule, Wellness, Preference, Query.
+
+Action Handler – Executes intent logic and updates memory.
+
+Memory Store – Maintains user preferences, snooze stats, and task list.
+
+Response Generator (LLM) – Produces natural conversational replies.
+
+Feedback Loop – Updates user model when preferences change.
+
+# Prompt Templates Used with LLM:
+
+| Task               | Prompt Template                                                                                                         |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| **System Prompt**  | “You are a helpful Personal Productivity Assistant. Be concise and friendly.”                                           |
+| **Add Task**       | `User: "{user_text}"`<br>`Assistant: Extract task title, due date/time, priority, and create a JSON task object.`       |
+| **Schedule Event** | `User: "{user_text}"`<br>`Assistant: Parse event title, proposed time, detect conflicts, and suggest alternatives.`     |
+| **Wellness Tip**   | `User context: {context}`<br>`Assistant: Suggest a short wellness tip and one action button (e.g., Start/Snooze).`      |
+| **General Query**  | `User question: "{user_text}"`<br>`Assistant: Provide a short helpful answer and, if relevant, a follow-up suggestion.` |
+
+# Simulation Procedure:
+
+## Input Handling:
+The system receives user inputs such as:
+
+“Remind me to call mom at 6 PM”
+
+“I’m feeling stressed”
+
+“Set work hours 10:00–18:00”
+
+## Intent Classification:
+Based on keywords and structure, the system decides if it’s a task, event, wellness query, etc.
+
+## Response Generation:
+The assistant forms natural responses using templates and stored preferences.
+
+## Preference Adaptation:
+
+Updates tone (“Use concise tone”)
+
+Adjusts working hours
+
+Records snooze or tip acceptance rates
+
+## Output Simulation:
+The final transcript and memory data are generated and stored.
+
+# Output:
+
+## Task Manager
+```
+User: Remind me to call mom at 6 PM  
+Assistant: ✅ Got it — I added "Call mom" to your tasks. Due today at 6:00 PM. Would you like a reminder before it's due? (Yes/No)
+```
+
+## Smart Scheduler
+```
+User: Schedule meeting with Priya tomorrow at 3 PM  
+Assistant: Scheduled "Meeting with Priya" at 3 PM for 1 hour.
+```
+
+## Wellness Suggestion
+```
+User: I'm feeling stressed  
+Assistant: Try a 2-minute guided breathing exercise. Shall I start a session now? (Start/Snooze)
+
+```
+
+## Preference Update
+```
+User: Set work hours 10:00–18:00  
+Assistant: Work hours updated to 10:00–18:00.
+
+```
+
+## Adaptive Response
+```
+User: Use concise tone  
+Assistant: Got it — I'll keep responses concise.
+
+```
+
+# Adaptation Mechanism:
+
+Maintains a JSON-based memory with fields like:
+```
+{
+  "preferences": {
+    "preferred_tone": "concise",
+    "work_hours": {"start": "10:00", "end": "18:00"},
+    "snooze_counts": {"stretch": 3}
+  }
+}
+```
+If a wellness tip is repeatedly snoozed, the assistant delays its frequency.
+
+Tone changes immediately affect all future responses.
+
+# Output Summary:
+
+| Component                   | Example Behavior                                           |
+| --------------------------- | ---------------------------------------------------------- |
+| **Daily Task Manager**      | Creates and lists tasks with due dates.                    |
+| **Smart Scheduler**         | Adds events, detects overlaps, proposes alternate slots.   |
+| **Wellness Tips Generator** | Suggests context-aware health reminders.                   |
+| **Preference Adaptation**   | Learns tone, work hours, and wellness timing.              |
+| **LLM Interaction**         | Natural, conversational replies based on prompt templates. |
+
+<img width="250" height="200" alt="image" src="https://github.com/user-attachments/assets/f320adba-94c5-4e73-a71f-1b9840f7fc56" />
 
 
-## IMAGES: (CHOOSE ANY TWO BELOW AND REPRODUCE)
+
+
+# Result: 
+The lab exercise resulted in the creation of a prototype concept for a personal assistant powered by large language models. Students were able to:
+ Understand how to tailor LLM prompts to real-life applications.
+ Foster creativity by designing features suited to their personal or academic lives.
+ Learn prompt engineering techniques for optimal interaction with AI tools.
+ Experience the versatility and utility of generative AI in solving everyday problems.
